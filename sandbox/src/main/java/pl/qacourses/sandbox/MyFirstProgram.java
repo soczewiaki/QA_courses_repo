@@ -6,25 +6,26 @@ public class MyFirstProgram {
         hello("world");
         hello("Anna");
         hello("user");
+
+        Square s = new Square(5);
+        Rectangle r = new Rectangle(4, 6);
+
+
+        System.out.println("powierzchnia kwadratu o boku " +  s.l + " = " + area(s));
         
-        double l =5;
-        
-        
-        System.out.println("powierzchnia kwadratu o boku " +  l + " = " + area(l));
-        double a = 4;
-        double b = 6;
-        System.out.println("powierzchnia prostokąta o bokach " +  a + " i " +  b  + " = " + area(a,b));
+
+        System.out.println("powierzchnia prostokąta o bokach " +  r.a + " i " +  r.b  + " = " + area(r));
     }
 public static void hello(String somebody) {
 
     System.out.println("Hello, " + somebody + "!");
 
 }
-public static double area(double len){
-    return len * len;
+public static double area(Square s){
+    return s.l * s.l;
 }
 
-public static double area(double a, double b){
-        return a * b;
+public static double area(Rectangle r){
+        return r.a * r.b;
 }
 }
