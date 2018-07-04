@@ -12,6 +12,11 @@ public class MyFirstProgram {
 
         Rectangle r = new Rectangle(4, 6);
         System.out.println("powierzchnia prostokąta o bokach " +  r.a + " i " +  r.b  + " = " + r.area());
+
+
+        Point p = new Point (13, 45, 23, 32);
+        System.out.println(p.distance());
+
     }
 public static void hello(String somebody) {
     System.out.println("Hello, " + somebody + "!");
@@ -25,4 +30,6 @@ public static double area(Square s){
 public static double area(Rectangle r) {
         return r.a * r.b;
 }
+
+
 }
