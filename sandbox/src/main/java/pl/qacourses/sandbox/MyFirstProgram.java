@@ -14,8 +14,8 @@ public class MyFirstProgram {
         System.out.println("powierzchnia prostokąta o bokach " +  r.a + " i " +  r.b  + " = " + r.area());
 
 
-        Point p = new Point (13, 45, 23, 32);
-        System.out.println(p.distance());
+        Point p = new Point (31, 18, 2000, 32);
+        System.out.println("odległość między punktami o parametrach podanych powyżej to" + " " + p.distance());
 
     }
 public static void hello(String somebody) {
